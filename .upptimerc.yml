@@ -1,31 +1,50 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# Configuración de Upptime para la página de estado pública de beloq
+# (plan de alertas 4-sep-2026). Los tres servicios vigilados ya son
+# públicos por diseño: aquí solo se publica su disponibilidad.
+owner: beloq
+repo: beloq-status
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: API de beloq (backend)
+    url: https://beloq-backend-z6zijzweeq-no.a.run.app/
+  - name: Broker MQTT (estaciones)
+    check: "tcp-ping"
+    url: mqtt.beloq.es
+    port: 8883
+  - name: Web NFC (m.beloq.es)
+    url: https://m.beloq.es/
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  cname: status.beloq.es
+  name: Estado de beloq
+  introTitle: "Estado de los sistemas de **beloq** en tiempo real"
+  introMessage: Aquí puedes comprobar si nuestros servicios funcionan con normalidad. Si hay una incidencia en curso aparecerá abajo, con actualizaciones y tiempo estimado de resolución.
   navbar:
-    - title: Status
+    - title: Estado
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+    - title: beloq.es
+      href: https://beloq.es
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+# Los incidentes se asignan a la cuenta de la organización
+assignees:
+  - beloq
+
+i18n:
+  activeIncidents: Incidencias activas
+  allSystemsOperational: Todos los sistemas funcionan con normalidad
+  incidentReport: "Incidencia #$NUMBER"
+  incidentTitle: "Detalles de la incidencia #$NUMBER"
+  incidentDetails: Detalles de la incidencia
+  incidentFixed: Resuelta
+  incidentOngoing: En curso
+  liveStatus: Estado en vivo
+  overallUptime: "Disponibilidad total: $UPTIME"
+  averageResponseTime: "Tiempo de respuesta medio: $TIME ms"
+  pastIncidents: Incidencias pasadas
+  pastIncidentsResolved: "Resuelta en $MINUTES minutos"
+  pageStatusUp: Todo operativo
+  pageStatusDown: Hay una incidencia activa
+  pageStatusDegraded: Rendimiento degradado
+  up: Operativo
+  down: Caído
+  degraded: Degradado
