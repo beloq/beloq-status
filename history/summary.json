@@ -23,18 +23,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/null.ico",
     "slug": "sistema-de-telecomunicaciones-entre-beloqs",
     "status": "down",
-    "uptime": "39.71%",
-    "uptimeDay": "39.71%",
-    "uptimeWeek": "39.71%",
-    "uptimeMonth": "39.71%",
-    "uptimeYear": "39.71%",
+    "uptime": "16.61%",
+    "uptimeDay": "16.61%",
+    "uptimeWeek": "16.61%",
+    "uptimeMonth": "16.61%",
+    "uptimeYear": "16.61%",
     "time": 214,
     "timeDay": 214,
     "timeWeek": 214,
     "timeMonth": 214,
     "timeYear": 214,
     "dailyMinutesDown": {
-      "2026-09-16": 0
+      "2026-09-16": 1
     }
   },
   {
@@ -43,18 +43,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/null.ico",
     "slug": "red-de-beloqs",
     "status": "down",
-    "uptime": "66.69%",
-    "uptimeDay": "66.69%",
-    "uptimeWeek": "66.69%",
-    "uptimeMonth": "66.69%",
-    "uptimeYear": "66.69%",
+    "uptime": "20.37%",
+    "uptimeDay": "20.37%",
+    "uptimeWeek": "20.37%",
+    "uptimeMonth": "20.37%",
+    "uptimeYear": "20.37%",
     "time": 215,
     "timeDay": 215,
     "timeWeek": 215,
     "timeMonth": 215,
     "timeYear": 215,
     "dailyMinutesDown": {
-      "2026-09-16": 0
+      "2026-09-16": 1
     }
   },
   {
