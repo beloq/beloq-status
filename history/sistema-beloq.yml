@@ -1,7 +1,7 @@
 url: $SECRET_SITE/health/sistema
 status: up
 code: 200
-responseTime: 361
-lastUpdated: 2026-09-17T01:11:49.825Z
+responseTime: 241
+lastUpdated: 2026-09-18T01:07:35.548Z
 startTime: 2026-09-16T14:23:24.196Z
 generator: Upptime <https://github.com/upptime/upptime>
