@@ -1,7 +1,7 @@
 url: $SECRET_SITE/health/red
 status: down
 code: 503
-responseTime: 140
-lastUpdated: 2026-09-19T01:02:40.559Z
+responseTime: 361
+lastUpdated: 2026-09-20T00:50:44.138Z
 startTime: 2026-09-16T14:23:40.404Z
 generator: Upptime <https://github.com/upptime/upptime>
