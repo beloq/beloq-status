@@ -1,7 +1,7 @@
 url: $SECRET_SITE/health/telecomunicaciones
 status: down
 code: 503
-responseTime: 202
-lastUpdated: 2026-10-24T17:39:33.814Z
+responseTime: 244
+lastUpdated: 2026-10-25T00:55:15.326Z
 startTime: 2026-09-16T14:23:24.735Z
 generator: Upptime <https://github.com/upptime/upptime>
